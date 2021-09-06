@@ -15,3 +15,4 @@ What to use:
 - styled-components
 - Typescript
 - Tests with react-testing-library or cypress
+- Structure like [here](https://feature-sliced.design/)
