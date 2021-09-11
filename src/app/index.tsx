@@ -3,8 +3,10 @@ import React from 'react';
 import 'normalize.css';
 import './index.scss';
 
+import Routing from '@/pages';
+
 function App() {
-  return <div className='App'>123123123</div>;
+  return <Routing />;
 }
 
 export default App;
