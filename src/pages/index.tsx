@@ -1,14 +1,14 @@
 import React, { lazy } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-const DetailedGif = lazy(() => import('./detailedGif'));
-const Main = lazy(() => import('./main'));
+const DetailedGifPage = lazy(() => import('./detailedGif'));
+const MainPage = lazy(() => import('./main'));
 
 const Routing = () => {
   return (
     <Switch>
-      <Route exact path='/' component={DetailedGif} />
-      <Route path='/' component={Main} />
+      <Route exact path='/detailed' component={DetailedGifPage} />
+      <Route exact path='/' component={MainPage} />
     </Switch>
   );
 };

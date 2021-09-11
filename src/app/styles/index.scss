@@ -1,1 +1,10 @@
 @import './vars.scss';
+@import './fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}

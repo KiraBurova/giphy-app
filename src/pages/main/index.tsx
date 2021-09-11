@@ -1,7 +1,13 @@
 import React from 'react';
 
-const TestPage = () => {
-  return <div>Test Page</div>;
+import SearchBar from '@/entities/searchBar/ui';
+
+const MainPage = () => {
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  );
 };
 
-export default TestPage;
+export default MainPage;
