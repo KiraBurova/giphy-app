@@ -1,11 +1,11 @@
 import React from 'react';
 
-import SearchBar from '@/entities/searchBar/ui';
+import SearchGifs from '@/features/searchGifs';
 
 const MainPage = () => {
   return (
     <div>
-      <SearchBar />
+      <SearchGifs />
     </div>
   );
 };
