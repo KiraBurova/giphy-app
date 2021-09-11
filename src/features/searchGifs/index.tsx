@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 import SearchBar from '@/entities/searchBar/ui';
 
-import { searchGifsAPI } from '@shared/api';
+import { actions } from './slice';
 
 const SearchGifs = () => {
+  const dispatch = useDispatch();
   const [searchValue, setSearchValue] = useState('');
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -13,7 +15,7 @@ const SearchGifs = () => {
   };
 
   const handleOnClick = () => {
-    searchGifsAPI(searchValue).then((response) => console.log(response));
+    dispatch(actions.searchGifs(searchValue));
   };
 
   return <SearchBar handleOnChange={handleOnChange} handleOnClick={handleOnClick} />;
