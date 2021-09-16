@@ -3,7 +3,7 @@ import { GIFObject } from 'giphy-api';
 
 const stateName = 'searchedGifs';
 
-type initialStateType = {
+export type initialStateType = {
   gifs: GIFObject[];
 };
 
