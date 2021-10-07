@@ -6,31 +6,39 @@ import GifCard from '@entities/gifCard';
 
 import { actions, initialStateType } from './slice';
 
+import { Wrapper, Cards } from './styled';
+
 const SearchGifs = () => {
   const dispatch = useDispatch();
   const gifs = useSelector((state: initialStateType) => state.gifs);
 
   const [searchValue, setSearchValue] = useState('');
 
+  console.log(gifs);
+
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchValue(value);
   };
 
-  const handleOnClick = () => {
+  const handleOnClick = (e: React.MouseEvent<HTMLFormElement>) => {
+    e.preventDefault();
     dispatch(actions.searchGifs(searchValue));
   };
 
   return (
-    <>
-      <SearchBar handleOnChange={handleOnChange} handleOnClick={handleOnClick} />
-      <div>
-        {gifs.length &&
-          gifs.map((gif) => {
-            return <GifCard>{gif.title}</GifCard>;
-          })}
-      </div>
-    </>
+    <Wrapper>
+      <form onSubmit={handleOnClick}>
+        <SearchBar handleOnChange={handleOnChange} />
+      </form>
+      {!!gifs.length && (
+        <Cards>
+          {gifs.map((gif) => (
+            <GifCard key={gif.id} gif={gif} />
+          ))}
+        </Cards>
+      )}
+    </Wrapper>
   );
 };
 

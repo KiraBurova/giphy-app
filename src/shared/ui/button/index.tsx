@@ -4,7 +4,7 @@ import { Base } from './styled';
 
 type Props = {
   content: string;
-  handleOnClick: (e: React.MouseEvent) => void;
+  handleOnClick?: (e: React.MouseEvent) => void;
 };
 
 const Button = ({ content, handleOnClick }: Props) => {

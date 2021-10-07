@@ -5,14 +5,13 @@ import Button from '@shared/ui/button';
 
 type Props = {
   handleOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  handleOnClick: (e: React.MouseEvent) => void;
 };
 
-const SearchBar = ({ handleOnChange, handleOnClick }: Props) => {
+const SearchBar = ({ handleOnChange }: Props) => {
   return (
     <>
       <Input handleOnChange={handleOnChange} placeholder='Start typing to search...'></Input>
-      <Button handleOnClick={handleOnClick} content='Search' />
+      <Button content='Search' />
     </>
   );
 };

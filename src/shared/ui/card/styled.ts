@@ -6,4 +6,5 @@ export const Base = styled.div`
   border: 0.1em solid var(--main-dark);
   border-radius: var(--border-radius);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: auto;
 `;

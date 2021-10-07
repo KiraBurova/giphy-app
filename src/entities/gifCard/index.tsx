@@ -1,17 +1,25 @@
 import React from 'react';
 
+import { GIFObject } from 'giphy-api';
+
 import Card from '@shared/ui/card';
 
-import { Base } from './styled';
+import { Base, Image, Title, Source, Link } from './styled';
 
 type Props = {
-  children: React.ReactNode;
+  gif: GIFObject;
 };
 
-const gifCard = ({ children }: Props) => {
+const gifCard = ({ gif }: Props) => {
   return (
     <Base>
-      <Card>{children}</Card>
+      <Card>
+        <Image src={gif.images.downsized_large.url} alt={gif.title} />
+        <Title>{gif.title}</Title>
+        <Link href={gif.source_post_url}>
+          <Source>Source: {gif.source_tld}</Source>
+        </Link>
+      </Card>
     </Base>
   );
 };
