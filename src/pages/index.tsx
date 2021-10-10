@@ -7,7 +7,7 @@ const MainPage = lazy(() => import('./main'));
 const Routing = () => {
   return (
     <Switch>
-      <Route exact path='/detailed' component={DetailedGifPage} />
+      <Route exact path='/:id' component={DetailedGifPage} />
       <Route exact path='/' component={MainPage} />
     </Switch>
   );

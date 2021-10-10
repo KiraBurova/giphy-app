@@ -6,15 +6,13 @@ import GifCard from '@entities/gifCard';
 
 import { actions, initialStateType } from './slice';
 
-import { Wrapper, Cards } from './styled';
+import { Wrapper, Cards, StyledLink } from './styled';
 
 const SearchGifs = () => {
   const dispatch = useDispatch();
   const gifs = useSelector((state: initialStateType) => state.gifs);
 
   const [searchValue, setSearchValue] = useState('');
-
-  console.log(gifs);
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -34,7 +32,9 @@ const SearchGifs = () => {
       {!!gifs.length && (
         <Cards>
           {gifs.map((gif) => (
-            <GifCard key={gif.id} gif={gif} />
+            <StyledLink to={`/${gif.id}`}>
+              <GifCard key={gif.id} gif={gif} />
+            </StyledLink>
           ))}
         </Cards>
       )}

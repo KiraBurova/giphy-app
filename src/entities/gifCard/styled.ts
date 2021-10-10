@@ -14,9 +14,7 @@ export const Title = styled.h3`
   text-transform: uppercase;
 `;
 
-export const Source = styled.p``;
-
-export const Link = styled.a`
+export const Source = styled.p`
   font-size: 0.9rem;
   color: var(--accent);
 `;

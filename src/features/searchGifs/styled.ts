@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 export const Wrapper = styled.div`
   padding: 5em;
   display: flex;
@@ -14,4 +16,9 @@ export const Cards = styled.div`
   grid-template-rows: 1fr min-content;
   grid-gap: 1.5em;
   margin-top: 5em;
+`;
+
+export const StyledLink = styled(Link)`
+  color: var(--main-dark);
+  text-decoration: none;
 `;
