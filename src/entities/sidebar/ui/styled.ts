@@ -1,16 +1,9 @@
 import styled from 'styled-components';
 
 export const Base = styled.div`
-  font-size: 1rem;
-  padding: 0.5em 1em;
-  border: none;
+  display: flex;
+  padding: 5em;
+  border: 1px solid var(--main-dark);
   border-radius: var(--border-radius);
-  background-color: var(--accent);
-  color: var(--main-light);
-  cursor: pointer;
-  transition: background-color var(--transition);
-
-  &:hover {
-    background-color: var(--darken-accent);
-  }
+  box-sizing: border-box;
 `;

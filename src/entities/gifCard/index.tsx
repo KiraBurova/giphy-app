@@ -16,7 +16,7 @@ const gifCard = ({ gif }: Props) => {
       <Card>
         <Image src={gif.images.downsized_large.url} alt={gif.title} />
         <Title>{gif.title}</Title>
-        <Source>Source: {gif.source_tld}</Source>
+        <Source>Source: {gif.source_tld ? gif.source_tld : 'Unknown'}</Source>
       </Card>
     </Base>
   );
