@@ -89,6 +89,7 @@ module.exports = {
           map: [
             ['@/*', '.src/*'],
             ['@shared/*', 'src/shared/*'],
+            ['@pages/*', 'src/pages/*'],
             ['@entities/*', 'src/entities/*'],
             ['@features/*', 'src/features/*'],
           ],

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStore } from 'effector-react';
 
-import SearchBar from '@/entities/searchBar/ui';
+import SearchBar from '@entities/searchBar/ui';
 import GifCard from '@entities/gifCard';
 
 import { $gifs, $searchedGif, searchGifsFx, setSearchedGif } from './model';
