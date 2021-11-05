@@ -31,7 +31,7 @@ const SearchGifs = () => {
       </form>
       {!!gifs.length && (
         <Cards>
-          {gifs.map((gif) => (
+          {gifs.map(gif => (
             <StyledLink to={`/${gif.id}`}>
               <GifCard key={gif.id} gif={gif} />
             </StyledLink>
