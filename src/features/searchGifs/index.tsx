@@ -6,7 +6,7 @@ import GifCard from '@entities/gifCard';
 
 import { $gifs, $searchedGif, searchGifsFx, setSearchedGif } from './model';
 
-import { Wrapper, Cards, StyledLink } from './ui/styled';
+import { Wrapper, Cards, StyledLink, StyledForm } from './ui/styled';
 
 const SearchGifs = () => {
   const gifs = useStore($gifs);
@@ -26,9 +26,9 @@ const SearchGifs = () => {
 
   return (
     <Wrapper>
-      <form onSubmit={handleOnClick}>
+      <StyledForm onSubmit={handleOnClick}>
         <SearchBar handleOnChange={handleOnChange} />
-      </form>
+      </StyledForm>
       {!!gifs.length && (
         <Cards>
           {gifs.map(gif => (

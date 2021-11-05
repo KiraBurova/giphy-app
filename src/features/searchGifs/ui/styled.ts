@@ -22,3 +22,5 @@ export const StyledLink = styled(Link)`
   color: var(--main-dark);
   text-decoration: none;
 `;
+
+export const StyledForm = styled.form``;
