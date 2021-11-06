@@ -1,14 +1,14 @@
 import React from 'react';
 
 import SearchGifs from '@features/searchGifs';
-import SideBar from '@entities/sidebar';
+import TrendingSearches from '@features/trendingSearches';
 
 import { Base } from './ui/styled';
 
 const MainPage = () => {
   return (
     <Base>
-      <SideBar />
+      <TrendingSearches />
       <SearchGifs />
     </Base>
   );

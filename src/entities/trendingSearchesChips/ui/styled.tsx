@@ -2,5 +2,6 @@ import styled from 'styled-components';
 
 export const Base = styled.div`
   display: flex;
-  padding: 1em;
+  flex-direction: column;
+  gap: 0.5em;
 `;

@@ -3,9 +3,11 @@
 [API](https://developers.giphy.com/docs/api/endpoint#search-suggestions)
 
 Ideas:
-- Filters based on [categories](https://developers.giphy.com/docs/api/endpoint#categories) 
+
+- ~~Filters based on [categories](https://developers.giphy.com/docs/api/endpoint#categories)~~
 - Ability to [search](https://developers.giphy.com/docs/api/endpoint#search)
-- [Suggested searches](https://developers.giphy.com/docs/api/endpoint#search-suggestions)
+- ~~[Suggested searches](https://developers.giphy.com/docs/api/endpoint#search-suggestions)~~
+- [Trending searches](https://developers.giphy.com/docs/api/endpoint#trending-search-terms)
 - Place for fun [Random gif](https://developers.giphy.com/docs/api/endpoint#random)
 - Possibly [wrap API with graphql](https://graphql.org/blog/rest-api-graphql-wrapper/)
 - Some kind of [Single Gif page](https://developers.giphy.com/docs/api/endpoint#get-gif-by-id)
