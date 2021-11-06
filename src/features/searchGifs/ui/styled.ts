@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Wrapper = styled.div`
-  padding: 5em;
+  padding: 0 5em 5em 5em;
   display: flex;
   height: 100%;
   flex-direction: column;
