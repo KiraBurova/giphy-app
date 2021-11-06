@@ -3,10 +3,6 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -25,8 +21,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
   ],
   rules: {
-    'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/jsx-wrap-multilines': 'off',
     'react/jsx-curly-newline': 'off',

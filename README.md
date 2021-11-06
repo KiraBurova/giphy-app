@@ -13,7 +13,7 @@ Ideas:
 What to use:
 
 - Giphy API
-- Redux with hooks and toolkit
+- ~~Redux with hooks and toolkit~~ Effector
 - React-router
 - styled-components
 - Typescript
